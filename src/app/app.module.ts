@@ -11,6 +11,8 @@ import { PageNewArtComponent } from './components/page-new-art/page-new-art.comp
 
 import { FormsModule} from "@angular/forms";
 import { KpiCardComponent } from './components/kpi-card/kpi-card.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { KpiCardComponent } from './components/kpi-card/kpi-card.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]

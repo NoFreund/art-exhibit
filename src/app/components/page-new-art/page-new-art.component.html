@@ -1,0 +1,65 @@
+<h4>Sign up here!</h4>
+
+<div class="row">
+
+    <div class="input-field col s6">
+      <input id="artist" placeholder="Artist" type="text" [(ngModel)]="currentArt.artist">
+      <label for="artist">Name of the Artist</label>
+    </div>
+    
+    <div class="input-field col s6">
+        <input placeholder="example@mail.com" id="mail" type="email" [(ngModel)]="currentArt.mail">
+        <label for="mail">E-Mail address</label>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="input-field col s6">
+        <input placeholder="Name of the Art Piece" id="art_name" type="text" [(ngModel)]="currentArt.name">
+        <label for="book_name">Name of the piece</label>
+    </div>
+
+    <div class="input-field col s6">
+        <input placeholder="category" id="category" type="text" [(ngModel)]="currentArt.category">
+        <label for="category">Medium</label>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="input-field col s6">
+        <input id="finieshed_date" placeholder="16/03/2020" type="text" class="datepicker" [(ngModel)]="currentArt.date">
+        <label for="finieshed_date">Finished on</label>
+    </div>
+
+    <div class="input-field col s6">
+        <input placeholder="Short description..." id="description" type="text" [(ngModel)]="currentArt.description">
+        <label for="isbn">Description</label>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="input-field col s6">
+        <input id="price" placeholder="10" type="number" [(ngModel)]="currentArt.price">
+        <label for="price">Price</label>
+    </div>
+
+    <div class="input-field col s6">
+        <input id="cover" placeholder="http://..." type="url" [(ngModel)]="currentArt.picture">
+        <label for="cover">The Art itself</label>
+    </div>
+
+</div>
+
+<div class="center">
+    <a (click)="addArtClicked()" class="btn deep-purple">
+      <i>Let the Jury decide!</i>
+    </a>
+</div>
+
+

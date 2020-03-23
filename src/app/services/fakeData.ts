@@ -1,0 +1,36 @@
+export const ArtsArray = [
+    {
+        name: 'artpiece1',
+        artist: 'Jane Doe',
+        mail: 'bla@bla.com',
+        available: true,
+        category: 'photography',
+        price: 1000,
+        date: '16/03/2020',
+        picture: 'https://picsum.photos/200',
+        description: 'bla blubb stuff is here',
+    },
+    {
+        name: 'artpiece2',
+        artist: 'Jane Doe',
+        mail: 'bla@bla.com',
+        available: true,
+        category: 'painting',
+        price: 900,
+        date: '16/03/2020',
+        picture: 'https://picsum.photos/200',
+        description: 'bla blubb stuff is here',
+    },
+    {
+        name: 'artpiece3',
+        artist: 'Jane Doe',
+        mail: 'bla@bla.com',
+        available: true,
+        category: 'etching',
+        price: 1600,
+        date: '16/03/2020',
+        picture: 'https://picsum.photos/200',
+        description: 'bla blubb stuff is here',
+    },
+    
+    ]

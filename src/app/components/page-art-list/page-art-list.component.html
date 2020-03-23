@@ -1,0 +1,30 @@
+<h4 class="center">Interested in who's joining?</h4>
+
+<table class="highlight">
+    <thead>
+      <tr>
+          <th>Artist</th>
+          <th>Medium</th>
+          <th>Price</th>
+          <th>Preview</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let art of myArray" [class.red-text]="!art.available" >
+        <td>{{ art.artist }}</td>
+        <td>{{ art.category }}</td>
+        <td>{{ art.price | currency : "EUR":true}}</td>
+        <td [routerLink]="['/art-details', art.name]"><img src="{{ art.picture }}" width="70"></td>
+      </tr>
+    </tbody>
+  </table>
+
+<app-kpi-card 
+  title="Pieces still up for reservation" 
+  color="deep-purple" 
+  number="{{ naA }}">
+</app-kpi-card>
+
+
+
